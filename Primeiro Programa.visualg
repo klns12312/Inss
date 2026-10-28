@@ -1,0 +1,42 @@
+algoritmo "Primeiro Programa"
+
+var
+  bruto: real
+  liquido: real
+  desconto: real
+
+inicio
+
+  escreval("Digite seu salario bruto: ")
+  leia(bruto)
+  se bruto <= 1621 entao
+    desconto <- bruto * 0.075
+    liquido <- bruto - desconto
+    escreval("O seu salario bruto é de: R$",bruto)
+    escreval("O seu salario liquido é de: R$",liquido)
+    escreval("O seu desconto é de: R$",desconto)
+  senao
+    se bruto <= 2902.84 entao
+      desconto <- (bruto * 0.09)- 24.32
+      liquido <- bruto - desconto
+      escreval("O seu salario bruto é de: R$",bruto)
+      escreval("O seu salario liquido é de: R$",liquido)
+      escreval("O seu desconto é de: R$",desconto)
+    senao
+      se bruto <= 4354.27
+        desconto <- (bruto * 0.12) - 111.40
+        liquido <- bruto - desconto
+        escreval("O seu salario bruto é de: R$",bruto)
+        escreval("O seu salario liquido é de: R$",liquido)
+        escreval("O seu desconto é de: R$",desconto)
+      senao
+        desconto <- (bruto * 0.14) - 198.42
+        liquido <- bruto - desconto
+        escreval("O seu salario bruto é de: R$",bruto)
+        escreval("O seu salario liquido é de: R$",liquido)
+        escreval("O seu desconto é de: R$",desconto)
+      fimse
+    fimse
+  fimse
+
+fimalgoritmo
